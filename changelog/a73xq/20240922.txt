@@ -1,0 +1,187 @@
+====================
+     09-22-2024
+====================
+
+   * frameworks/base
+3f1ba9bda PixelPropsUtils: set proper incremental timestamp
+0c00719f4 New translations (#1143)
+80053f00e PixelPropsUtils: Update fingerprint
+cd901a495 WebView: Add check before setting default or fallback provider
+fa10f09df webview: handle null in pinning impl.
+9418c7575 Better error handling for webkit classes
+3c7aad8e0 Add the logging code for WebView Update service metrics
+
+   * packages/apps/Dialer
+4605bbbd New Crowdin updates (#121)
+
+   * packages/apps/DocumentsUI
+73d8f84d Use proper background in dark theme
+
+   * packages/apps/Launcher3
+08313c2 New Crowdin updates (#435)
+
+   * packages/apps/crDroidSettings
+3a6abc1 New Crowdin updates (#1170)
+
+====================
+     09-21-2024
+====================
+
+   * build/soong
+106d24a0 Remove workaround for Qualcomm Kryo 385
+
+   * external/tinycompress
+0bec8c2 tinycompress: Add conditional compilation check for compress param
+
+   * frameworks/base
+698b11b5a More improvements for three finger swipe
+1053bb3a0 Revert "Spoof a valid certificate chain for hardware attestations"
+
+   * vendor/lineage
+1404619 overlay: Set AOSP webview as fallback
+
+   * vendor/qcom/opensource/commonsys/wfd
+d769796 libwfdaac_vendor: Build with -Werror
+
+====================
+     09-20-2024
+====================
+
+   * frameworks/av
+12ca00441 AudioFlinger: Do not create direct secondary output tracks
+26753a784 AudioPolicyManager: Do not allow secondary outputs with PCM offload
+
+   * frameworks/base
+5fc49ed87 AudioTrack: Enable CONTENT_TYPE_SPEECH for automatic power savings
+e10bc5563 Disable bytecode optimization for SystemUIRobo-stub
+21be97562 Settings: keep the old ringtine cache not delete when set failed.
+f8247ef59 fix(high contrast text) : Make simplified paint have SRC_OVER blend mode.
+e6ef13bb1 Wifi Standard: Prevent possible memory leak
+ebeb219f0 Wifi Standard: Rework handling logic
+eca16143b SystemUI: Tune wifi standard icon margins
+
+   * packages/modules/Connectivity
+4eb411b42 Move to one unified implementation of FakeDns.
+
+====================
+     09-19-2024
+====================
+
+====================
+     09-18-2024
+====================
+
+   * vendor/qcom/opensource/commonsys/wfd
+c7be245 libwfdaac_vendor: Convert to blueprint
+abcc38a libwfdaac_vendor: Use log/log.h instead of utils/Log.h
+8cf42b7 libwfdaac_vendor: Remove unused shared libs
+
+====================
+     09-17-2024
+====================
+
+====================
+     09-16-2024
+====================
+
+   * hardware/samsung
+9f252a23 Automatic translation import
+
+   * packages/apps/Aperture
+a7cf2bf Automatic translation import
+
+   * packages/apps/Car/Settings
+e0d3f521 Automatic translation import
+
+   * packages/apps/DeskClock
+153ae3f Automatic translation import
+
+   * packages/apps/Eleven
+471efbe Automatic translation import
+
+   * packages/apps/Etar
+bbd8137 Automatic translation import
+
+   * packages/apps/FlipFlap
+fb78ed2 Automatic translation import
+
+   * packages/apps/Glimpse
+b94bd96 Automatic translation import
+
+   * packages/apps/Jelly
+a60352a Automatic translation import
+
+   * packages/apps/Recorder
+65c080b Automatic translation import
+
+   * packages/apps/TvSettings
+e54a7573 Automatic translation import
+
+   * packages/providers/DownloadProvider
+932125c Automatic translation import
+
+   * packages/resources/devicesettings
+31374c0 Automatic translation import
+
+   * vendor/crowdin
+7841332 Automatic translation import
+
+   * vendor/qcom/opensource/usb
+8ebfad2 USBGadgetHAL: Set vid, pid for basic functions if exist in usb_compositions.conf
+
+====================
+     09-15-2024
+====================
+
+   * frameworks/base
+e152c49b4 Refresh vpn lockdown allowlist on package added/removed
+
+   * packages/apps/Dialer
+6605f828 New Crowdin updates (#119)
+
+   * packages/apps/Launcher3
+2637196 New Crowdin updates (#434)
+
+====================
+     09-14-2024
+====================
+
+   * frameworks/base
+a0de66de0 Fix PackageManager#getPackageArchiveInfo to cache derived fields
+0986d7d03 SystemUI: FileHeaderProvider: Fix resource leaks
+96b3409f1 ImageHelper: Improvements for retrieving compress bitmap
+39d59eab7 SystemUI: Rewrite and cleanup for header provider
+deccd63a8 PixelPropsUtils: spoof to Pixel 9 Pro XL
+46393e2d3 AvatarPhotoController: Fix resource leak and recycle bitmap
+ac14ad192 Revert "hwui: Add NULL pointer check in AnimatorManager::pushStaging"
+743b1bad3 Revert "hwui: Prevent a null pointer on renderthread"
+
+   * lineage-sdk
+e5ef18e Merge 'lineage-21.0' into 14.0
+
+   * packages/apps/Settings
+d09566b9d Merge pull request #152 from kamikaonashi/14.0
+2d56e5159  Add BatteryDivider to fuelgauge
+
+   * packages/apps/crDroidSettings
+eef24d0 crdroid: Rewrite header image settings
+
+   * system/sepolicy
+4be0790a Merge 'lineage-21.0' into 14.0
+
+====================
+     09-13-2024
+====================
+
+   * frameworks/base
+19283b7f2 Revert "BrightnessController: Prevent possible memory leak"
+9533af9a9 NetworkTraffic: Fix leak in network callback
+ae7c313ba MobileSignalController: Prevent possible memory leak
+02ebaace1 QSImpl: Prevent possible memory leak
+a3d94c1fd CollapsedStatusBarFragment: Prevent memory leak
+51cdae695 OmnijawsClient: Fix memory leak
+0a41e0fc0 Ensure DisplayTracker callback is not GC
+
+   * packages/apps/Aperture
+e570a4f Aperture: Enable ZXing-C++ tryInvert option
+
