@@ -1,0 +1,97 @@
+
+====================
+     09-26-2024
+====================
+
+   * build/soong
+cef2d0b03 check_boot_jars: Correct Nothing package name
+
+   * external/chromium-webview/prebuilt/arm
+175ad5b Update Chromium Webview arm prebuilt to 129.0.6668.70
+
+   * external/chromium-webview/prebuilt/arm64
+522ea9c Update Chromium Webview arm64 prebuilt to 129.0.6668.70
+
+   * external/chromium-webview/prebuilt/x86
+ac17965 Update Chromium Webview x86 prebuilt to 129.0.6668.70
+
+   * external/chromium-webview/prebuilt/x86_64
+c77f59b Update Chromium Webview x86_64 prebuilt to 129.0.6668.70
+
+   * hardware/qcom-caf/msm8996/audio
+23afd43552 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/msm8998/audio
+58edf81311 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sdm660/audio
+ff3ae1e545 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sdm845/audio
+106fb71b11 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sm8250/audio
+bad88ef83e mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sm8350/audio
+3916c04337 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sm8450/data-ipa-cfg-mgr
+c873e99 ipacm: Get rid of `using namespace std;`
+
+   * hardware/qcom-caf/sm8550/data-ipa-cfg-mgr
+f2d86f7 ipacm: Get rid of `using namespace std;`
+
+   * tools/extract-utils
+a466f3f templates: Add a sort-blobs-list shortcut
+937ec4c extract_utils: sort-blobs-list.py: Reintroduce dir first as an opt-in
+fd9549e extract_utils: sort-blobs-list.py: Improve support for special syntax
+b18d9ea extract_utils: Don't remove the "extension" if it makes the package name empty
+91e22ee extract-utils: Show error on hash mismatch
+db62e08 extract-utils: Fixup pinned files again
+a10e0bf extract-utils: Allow trying source file before target file
+09ed2ba extract_utils: Add support to skip checking preprocessed apks
+2a10a4d extract_utils: Allow SYMLINK co-exist with other args
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
+cf276cc ipacm: Get rid of `using namespace std;`
+
+====================
+     09-25-2024
+====================
+
+   * external/chromium-webview/patches
+4b12947 Update Chromium Webview to 129.0.6668.70
+
+====================
+     09-24-2024
+====================
+
+   * device/qcom/sepolicy_vndr/sm8450
+43f02ac53 sepolicy_vndr: Allow init/vendor_init to write proc firmware config
+cc113d7ce sepolicy_vndr: Label proc firmware config node
+
+====================
+     09-23-2024
+====================
+
+   * frameworks/av
+8e3dfe0eb2 Release audio patch just after it was created in case no waiting caller
+
+   * frameworks/base
+2f8b74c9249e fixup! PixelPropsUtils: Restore keystore safetynet attestation blocking
+f69d59aa7bf8 Fix race condition in process observer
+
+   * vendor/addons
+14073554 addons: BlackTheme: Affect more background colors
+
+====================
+     09-22-2024
+====================
+
+   * frameworks/base
+82fa90dfa337 PixelPropsUtils: Restore keystore safetynet attestation blocking
+
+   * packages/apps/DocumentsUI
+73d8f84dd Use proper background in dark theme
+
