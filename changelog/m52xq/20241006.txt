@@ -1,0 +1,209 @@
+====================
+     10-06-2024
+====================
+
+   * frameworks/base
+8b085d707 fixup! SystemUI: Don't animate QS tile text when opening activity/dialog from A11QS ui
+74f770966 fixup! SystemUI: Add QS tile layout settings [1/2]
+
+====================
+     10-05-2024
+====================
+
+   * device/samsung/sm7325-common
+cfe55e2 crdroid.dependencies
+fe15006 sm7325-common: Remove software omx codec references
+55b5846 sm7325-common: Inherit from QTI FCM
+6ff9e94 sm7325-common: Use the common device compatibility matrix from QCOM
+e46cc44 sm7325-common: Include hardware/samsung FCM
+
+   * frameworks/base
+517eb8e0d Revert "Optionally have System-scheduled backups act as migrations"
+
+   * hardware/samsung
+f43e111f vintf: Add NFC entries
+
+   * tools/extract-utils
+aceac8e extract-utils: Join filtered args before adding them to the array
+
+====================
+     10-04-2024
+====================
+
+   * frameworks/av
+6b603af4d C2SoftMp3Dec: Fix potential null reference in onStop()
+
+   * frameworks/base
+c5a4e25a6 BatteryStyles: Handle visibility from controller only
+ec02d5de7 BatteryMeterView: Battery icon available by default
+86c609290 SystemUI: BatteryController: Fix build of Car SystemUI
+8fcd04967 Revert "Refresh vpn lockdown allowlist on package added/removed"
+014f87ae2 Use MappedFile in android_database_SQLiteConnection
+5d49d2d77 Improve the use of pointer
+1224a0958 fix: show overrides in device_config list
+097b80024 Add null check for AppOpsService
+f1452c70a fixup!^2 BatteryMeterView: Hide icon on battery-less devices
+9997ce8d9 BrightnessController: Prevent possible memory leak
+
+====================
+     10-03-2024
+====================
+
+   * frameworks/base
+a6dfb5da5 Merge pull request #1147 from ionutsandroidbuilds/14.0
+ab31f18f1 PixelPropsUtils: update to latest komodo beta
+
+   * packages/apps/Aperture
+7550eaa Aperture: Update CameraX to 1.5.0-alpha02
+
+====================
+     10-02-2024
+====================
+
+   * external/openssh
+60ca886 ssh program now resides in /product/bin
+
+   * packages/apps/Aperture
+822ce5c Automatic translation import
+
+   * packages/apps/DeskClock
+907781a Automatic translation import
+
+   * packages/apps/Dialer
+c293b284 New Crowdin updates (#122)
+
+   * packages/apps/Eleven
+299b7bb Automatic translation import
+
+   * packages/apps/Etar
+78dae02 Automatic translation import
+
+   * packages/apps/GameSpace
+bdf4c13 New translations (#88)
+
+   * packages/apps/Glimpse
+fdee54d Automatic translation import
+
+   * packages/apps/Jelly
+602c59e Automatic translation import
+
+   * packages/apps/Launcher3
+98452e9 New Crowdin updates (#437)
+
+   * packages/apps/Recorder
+81b2f0f Automatic translation import
+
+   * packages/apps/crDroidSettings
+39237b4 New Crowdin updates (#1173)
+
+   * prebuilts/extract-tools
+b126753 linux-x86: remove qc_image_unpacker
+
+   * vendor/crowdin
+31dabf8 Automatic translation import
+
+====================
+     10-01-2024
+====================
+
+   * hardware/qcom-caf/sm8550/audio/primary-hal
+99ae016 hal: Guard primary audio HAL in case target provides prebuilt
+
+====================
+     09-30-2024
+====================
+
+   * device/qcom/sepolicy_vndr/sm8550
+16b49462 sepolicy_vndr: Allow init/vendor_init to write proc firmware config
+cb57a5f8 sepolicy_vndr: Label proc firmware config node
+
+   * prebuilts/tools-lineage
+10b65c9 Add mkimage for U-Boot script in-tree compilation
+
+   * vendor/addons
+79682dcc addons: BlackTheme: Rework shades of system container
+
+====================
+     09-29-2024
+====================
+
+   * hardware/qcom-caf/sm8250/display
+58c486b7 Add missing libc++ includes
+
+   * packages/apps/Dialer
+83f7ad3f Merge remote-tracking branch 'lineage-21.0' into 14.0
+
+   * vendor/addons
+e9d2c9bc addons: Update themed icons
+eb383cdd addons: Remove garbage
+
+====================
+     09-28-2024
+====================
+
+   * packages/apps/Launcher3
+506d180 fixup! Launcher3: Quickspace: Rewrite for now playing
+
+   * prebuilts/clang/host/linux-x86/clang-latest
+a8c0048 clang 19.0.1 (based on r536225) from build 12414805
+
+   * system/sepolicy
+eee3aa36 Allow adb root on user builds
+
+====================
+     09-27-2024
+====================
+
+   * build/soong
+cef2d0b0 check_boot_jars: Correct Nothing package name
+
+   * external/chromium-webview/prebuilt/arm
+175ad5b Update Chromium Webview arm prebuilt to 129.0.6668.70
+
+   * external/chromium-webview/prebuilt/arm64
+522ea9c Update Chromium Webview arm64 prebuilt to 129.0.6668.70
+
+   * external/chromium-webview/prebuilt/x86
+ac17965 Update Chromium Webview x86 prebuilt to 129.0.6668.70
+
+   * external/chromium-webview/prebuilt/x86_64
+c77f59b Update Chromium Webview x86_64 prebuilt to 129.0.6668.70
+
+   * hardware/qcom-caf/msm8996/audio
+23afd4355 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/msm8998/audio
+58edf8131 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sdm660/audio
+ff3ae1e54 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sdm845/audio
+106fb71b1 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sm8250/audio
+bad88ef83 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sm8350/audio
+3916c0433 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+   * hardware/qcom-caf/sm8450/data-ipa-cfg-mgr
+c873e99 ipacm: Get rid of `using namespace std;`
+
+   * hardware/qcom-caf/sm8550/data-ipa-cfg-mgr
+f2d86f7 ipacm: Get rid of `using namespace std;`
+
+   * tools/extract-utils
+a466f3f templates: Add a sort-blobs-list shortcut
+937ec4c extract_utils: sort-blobs-list.py: Reintroduce dir first as an opt-in
+fd9549e extract_utils: sort-blobs-list.py: Improve support for special syntax
+b18d9ea extract_utils: Don't remove the "extension" if it makes the package name empty
+91e22ee extract-utils: Show error on hash mismatch
+db62e08 extract-utils: Fixup pinned files again
+a10e0bf extract-utils: Allow trying source file before target file
+09ed2ba extract_utils: Add support to skip checking preprocessed apks
+2a10a4d extract_utils: Allow SYMLINK co-exist with other args
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
+cf276cc ipacm: Get rid of `using namespace std;`
+
