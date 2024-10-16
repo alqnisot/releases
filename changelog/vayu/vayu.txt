@@ -1,0 +1,593 @@
+====================
+    17-10-2024
+====================
+
+   * android
+format=d3621ee34f788f995c482a4d0fc4041f5a9e5fc5 manifest: October 2024 Security update
+
+
+====================
+    17-10-2024
+====================
+
+   * bootable/recovery
+format=b4badc02bbfd774c328c20cfc71f35d7399582ae minui: drm: Add support for DRM_FORMAT_XRGB8888
+format=93fd29fc0c7210f0455262c957ef22e65820d088 install: fuse_install: Browse directory using std::filesystem
+format=479211e8ade36ffcb582bc172825aeb47177bfcf volume_manager: Add support for ISO9660/UDF CD-ROM
+format=b9dc74ab82451159a597feb2cb5e2c33ec7496d4 recovery: Add support for choosing update from virtiofs
+format=1aa65d2532d6c3d142cde3193e89599067d5ca44 recovery_ui: Home key = First option, End key = Last option
+format=dc1419a5970fceeba2d02b6850a720b16c9772c8 recovery_ui: Make use of more keys on keyboard
+
+
+====================
+    17-10-2024
+====================
+
+   * build/release
+format=c31f24408bb8b69d5a84ba17c8e3ef3a71b5e92b Correct RELEASE_PLATFORM_VERSION
+format=a3a5689e1979345ed7264d3d9f1574008dec4233 Bump Security String to 2024-10-01
+
+
+====================
+    17-10-2024
+====================
+
+   * device/lineage/atv
+format=28e18bc3e58c28252fe0bd931e9ea9afb510473f Silence most cast receiver logging
+
+
+====================
+    17-10-2024
+====================
+
+   * device/lineage/sepolicy
+format=70ed191f2b6a6af1ff9387da413e7583766e9268 sepolicy: Label iso9660 and udf filesystem
+
+
+====================
+    17-10-2024
+====================
+
+   * device/qcom/sepolicy_vndr/sm8450
+format=43f02ac5348f4f130ede6bf3daf0d27035d39344 sepolicy_vndr: Allow init/vendor_init to write proc firmware config
+format=cc113d7ceeea056cdf9017631c49d15761331746 sepolicy_vndr: Label proc firmware config node
+
+
+====================
+    17-10-2024
+====================
+
+   * device/qcom/sepolicy_vndr/sm8550
+format=16b49462117abd0bc787e9e697b2c068515f37a6 sepolicy_vndr: Allow init/vendor_init to write proc firmware config
+format=cb57a5f8e6795cc9a38922c811dcf9535f538873 sepolicy_vndr: Label proc firmware config node
+
+
+====================
+    17-10-2024
+====================
+
+   * device/xiaomi/jason
+format=5760e985aa6dc73b83d5ca30a1aff2f7e08c9262 Revert: qemu.hw.mainkeys=0
+format=32d17d061e4f98464f2873c4d6de40e5681886e3 jason: device.mk:  MindTheGapps included
+format=972e0061a4ace75a272d80f9c18da738a96b60db jason: remove Keymaster 3.0 from manifest
+format=eb5cf68eeec1b142188ffcb5795c055fd3c81493 jason: keymaster update
+
+
+====================
+    17-10-2024
+====================
+
+   * device/xiaomi/sm8150-common
+format=190d85a05ee125bcd7e9aa90d771c4dfb662e3c4 sm8150-common: Mark persist.vendor.qcom.bluetooth.scram.enabled as overridable
+
+
+====================
+    17-10-2024
+====================
+
+   * external/chromium-webview/patches
+format=4b12947d0ad8f1fc1c48f8782f34a17f3786b6d1 Update Chromium Webview to 129.0.6668.70
+
+
+====================
+    17-10-2024
+====================
+
+   * external/chromium-webview/prebuilt/arm
+format=175ad5b6bb9396afa6e778f80476eb0289e05b8f Update Chromium Webview arm prebuilt to 129.0.6668.70
+
+
+====================
+    17-10-2024
+====================
+
+   * external/chromium-webview/prebuilt/arm64
+format=522ea9ce17f941eae1c758eaa850645f3855ad07 Update Chromium Webview arm64 prebuilt to 129.0.6668.70
+
+
+====================
+    17-10-2024
+====================
+
+   * external/chromium-webview/prebuilt/x86
+format=ac179654d89de256d9364a0e75b7a239e7cf9aac Update Chromium Webview x86 prebuilt to 129.0.6668.70
+
+
+====================
+    17-10-2024
+====================
+
+   * external/chromium-webview/prebuilt/x86_64
+format=c77f59b8b34565d587a8314c14269bc98ff69bd6 Update Chromium Webview x86_64 prebuilt to 129.0.6668.70
+
+
+====================
+    17-10-2024
+====================
+
+   * external/openssh
+format=60ca88651d39f699932f63d41409facc18c5ad19 ssh program now resides in /product/bin
+
+
+====================
+    17-10-2024
+====================
+
+   * external/tinycompress
+format=0bec8c286308abffb7f67d323e36d3021ed06ea5 tinycompress: Add conditional compilation check for compress param
+
+
+====================
+    17-10-2024
+====================
+
+   * frameworks/base
+format=922b838bc0066e8b85fff6d50082481fec255d74 Merge tag 'android-security-14.0.0_r13' of https://android.googlesource.com/platform/frameworks/base into HEAD
+format=4c1696b64679d90ea3b2df81d7c899fbee799e5c Merge tag 'android-security-14.0.0_r12' of https://android.googlesource.com/platform/frameworks/base into HEAD
+format=7c5216ecfef86247cd73adeb0a7ac6bc18e626b6 VolumeDialogImpl: Update rows when adding one while the panel is showing
+format=b232554101b364321acf75d84b706f32e6a47c0c pm: actually check fs verity support
+format=19d7faf9e7b1c807b97536b3b6a58cb21df38efb Automatic translation import
+format=6037b25521f320f4ae5289214721c6c18aec1187 fixup!^2 BatteryMeterView: Hide icon on battery-less devices
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/msm8996/audio
+format=23afd435520190134a0bbf87fcd5b9415be92c1a mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/msm8998/audio
+format=58edf81311018fe0165e9709b08cb5a19dc6f35e mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/sdm660/audio
+format=ff3ae1e54538a93a1457d00d9b691e2f8b5a2ca0 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/sdm845/audio
+format=106fb71b11c026f35efa80765cecc63e3bc3ef8f mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/sm8150/audio
+format=7f013e0c1a6f0f1da421f9e8f5162ecd3bf195fd mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/sm8250/audio
+format=bad88ef83e59c94d6ac5f196f1fe7ea543b0409c mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/sm8250/display
+format=58c486b7a36f8af940248d1317ad348e04478d51 Add missing libc++ includes
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/sm8350/audio
+format=3916c043372f600faf98854fbef8873cfa5b4946 mm-audio: aenc-*: Remove unnecessary `using namespace std;`
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/sm8450/data-ipa-cfg-mgr
+format=c873e9983ed3c5c2525172273865193f6a892181 ipacm: Get rid of `using namespace std;`
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/sm8550/audio/primary-hal
+format=f784a33c6ed00200d36c2297dd7930bcf5c4a650 hal: Move audio primary HAL guard
+format=93bd8046fa4bad7f0e545f6408b582d1765697dc hal: Depend on agmserver and palserver headers
+format=3442a932ef99979a34af7f13b3a222b96554d0f4 audio-ar: compilation fix for KS sync path change.
+format=8c901302376f1ead9d2f7a5332407c2300bd9a9c Revert "audio: Use direct project pathmap"
+format=0ddcc36b19368f6d3497b6fa22bf5c4210c904e5 Revert "primary-hal: Update paths to agm and pal"
+format=99ae0164c07a85f4be24fdcbf4cbf70a4b16ec92 hal: Guard primary audio HAL in case target provides prebuilt
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/qcom-caf/sm8550/data-ipa-cfg-mgr
+format=f2d86f75a87d22a4cde8d1755b26285e77a0cc27 ipacm: Get rid of `using namespace std;`
+
+
+====================
+    17-10-2024
+====================
+
+   * hardware/xiaomi
+format=84114f9308673fc9408e07dd7c8bc59ccae105bb dolby: Exempt installing package in clone or private space
+format=e513a08d4167a33253ba19f7711542350e6e7e17 Merge pull request #5 from someone5678/14.0
+format=3bd2d3e1d9d52fd1d6e45dbcf1cf60a7bcbf86d9 XiaomiEuicc: Don't fatally crash when euicc package is not exists
+format=bc5f7805268d5c8d7f0bd4207313321fa722d582 Merge pull request #4 from marat2509/14.0
+format=a3c3944ba1e702817471b842c7abd1f9286e7b80 dolby: translate strings to Russian
+
+
+====================
+    17-10-2024
+====================
+
+   * kernel/xiaomi/sm8150
+format=2715d0cb022e116fad7dac3f85f9d54abca3b921 drivers: input: misc: xiaomi_keyboard: Enable by default
+format=9893bd26f69ca6db65362772c0293d3259b250bf drivers: hid: hid-xiaomi: Drop touchpad reporting
+format=bbf50c458b971a69d18c203ed3d4c800d8eba478 drivers: hid: Implement keyboard driver
+format=23f7c22aa9438859c4b620dca9ecb790a00baa73 drivers: gpu: dsi-staging: Disable dynamic fps and set refresh rate to 104
+format=0d14f6d4785de10c7d567cf5d7d21b55861b6178 arch: arm64: configs: xiaomi: Enable CONFIG_INITRAMFS_IGNORE_SKIP_FLAG
+format=11271a174c3489238fd969d7fbeea5fc8013bfcd init: Add CONFIG_INITRAMFS_IGNORE_SKIP_FLAG
+format=d8139c1a3e36b940e4c33c562d139c43e62a2dc2 arch: arm64: boot: dts: xiaomi: Move to 2si
+format=5fb3ab9a792dd34d991e2dd8dd3f4e2ee92af7ac arch: arm64: configs: xiaomi: Enable device-specific drivers
+format=13ff6bece4f5816cacb1776b0be19cf4142acbee techpack: audio: Import Xiaomi changes
+format=387429434e06d1da0c29905f808fcde8e1335451 techpack: audio: asoc: codecs: Use spk-id standard driver
+
+
+====================
+    17-10-2024
+====================
+
+   * libcore
+format=7d70effa59da7858563c1345a91838bfe07b2a45 Merge tag 'android-security-14.0.0_r13' of https://android.googlesource.com/platform/libcore into HEAD
+
+
+====================
+    17-10-2024
+====================
+
+   * lineage/charter
+format=a87d44a2cce1629f7f47f0e3578099e3090ed48d device-support-requirements: Device naming clarifications
+
+
+====================
+    17-10-2024
+====================
+
+   * lineage/hudson
+format=1ad6fa237cfa32d3acc75c8f4050e41ac0c37c08 Regenerate device dependency mappings
+format=ff0009321575ed621cf1b82b19f70164fad6c6fb Revert "Drop DRG"
+format=ff17f0823bb68e684ad25d2f44c1d06b0ca82a16 Hold my Lyre.
+format=0a0ecc221faf564707cc8f032186d348ad70e31e Regenerate device dependency mappings
+format=45675f8bde56cc4d3f5b08065bdec2584e6bbc34 we can't be friends
+format=a2ec01ae4b2bba4a0cbb793ce6ad5de96bde58ce Regenerate device dependency mappings
+format=9ea59c10d446b800e0bd38d95a244650b2ce6015 hudson: Promote onclite to 21
+format=dc38184b235dd71791dd6ed896e56f31166e2725 Regenerate device dependency mappings
+format=5c4b48c7f21dcb3b7610fa96085d5f64e4877bc2 Regenerate device dependency mappings
+
+
+====================
+    17-10-2024
+====================
+
+   * lineage/mirror
+format=dd4d5568acd33bfa292a36a03ef466f6c5f79e60 Updated lineage-minimal to 13-Oct-2024 12:01 UTC
+format=2edabd9c267c076c3de1d0b6617b047807b080be Updated aosp-minimal to 11-Oct-2024 12:02 UTC
+format=036ba4e24c899d7f768ba30e60cab8281561d4ad Updated to 09-Oct-2024 20:16 UTC
+format=1104d2293a1e1429a9c88e824f194ec6c60a5b99 Updated aosp-minimal to 09-Oct-2024 12:02 UTC
+format=2e7bb3b0b7ad670c9e95963a4879efd0034f724d Updated aosp-minimal to 05-Oct-2024 12:01 UTC
+format=9086a4da88058f21af02e162dae4febf2f75240a Updated aosp-minimal to 04-Oct-2024 12:02 UTC
+format=3a8300bf711a97ab71164a16004c0de5f7e8ceb3 Updated to 03-Oct-2024 15:19 UTC
+format=249b226731ef7d7b53732f7e521c5931edf2ac56 Updated to 02-Oct-2024 12:01 UTC
+format=6bd9ecf37cf13706e9e75bfacec6b243f61545d4 Updated lineage-minimal to 30-Sep-2024 12:02 UTC
+format=592cf257fd44ab21b744f70af554cb916cca5e7f Updated aosp-minimal to 26-Sep-2024 12:02 UTC
+
+
+====================
+    17-10-2024
+====================
+
+   * lineage/scripts
+format=888f78428b586276ee08d9aa3122174a8792c767 pixel: extract-utils: implement V1 image unpacking in fbpack
+format=9c3818fa8ce44d5599c074186a73419ba484515b git-push-merge-review: Add -t arg for setting topic
+format=fcb39454afbd011f2605027d9104854a46d3c0e5 git-push-merge-review: Initial commit
+format=4639950fbd8ac78218055bca3f560c052bb24a8d build-webview: Update default webview to 129.0.6668.70
+format=5055768decc5b0607e0fe757e8abf0e45379602d lineage-priv-template: Add Android 15 keys
+
+
+====================
+    17-10-2024
+====================
+
+   * lineage/website
+format=1e4b6a611db1a80dc57c6f2026ac658eeb2431ea www: Remove Google Play Certification blog post
+
+
+====================
+    17-10-2024
+====================
+
+   * lineage/wiki
+format=721c23916f21874c2bb2a5ac9e382073af12ac3a gtowifi: before_recovery_install: reword warning about the unlocked aboot
+format=f4fbb7efe77e39d8cce8d81b0ef46f1a6ca308ed gtowifi: fix link to aboot downgrade package, other minor fixes
+format=b9bea9f4a2f33f9bdf545555f41f428ae3889d27 gtowifi: clean up and formatting fixes
+format=d12464c1b2c681a8774cb012afd3c2df3916b55f pages: signing_builds: Remove mention of migration script from recovery
+format=aa4207242fea14c2008ea7c1aa162c43c61ba549 devices: nx: Install boot.scr
+format=9f8e341962847140af6d9fad8484b2e99c0dec71 Revert "Drop DRG"
+format=c375c283233e244d29faf08304ffbcf0b5c62f1d wiki: devices: bump Apollon to 21
+format=c239a404949c3ee93ca882b779ebe9fc485698df wiki: Add Nokia 8 (NB1)
+format=4bb65d6ae09fd1db5ba45455fac82ea358e8e52c firmware_update_xiaomi: Properly unzip MIUI zip
+format=b10c37240c036e03376ad7956b2ba0a97eefdac2 wiki: Promote onclite to 21
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Aperture
+format=7550eaabf3eb2552a532a678d0b51c641761de42 Aperture: Update CameraX to 1.5.0-alpha02
+format=822ce5c937c9447e1f2abaa9e35b066cef08ddbd Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Contacts
+format=9bb77f18e62b7f71196e963b841b8d8103cfbe24 Contacts: Pass correct account for `cancel` action
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/DeskClock
+format=907781a51568c2c88663646d4cfa91fe2dcbc712 Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Dialer
+format=e0c717d3ce659b4c7e6e9913aec797f8929c8ad9 Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Eleven
+format=299b7bb3eaa73a0c834eb33d2c7546887a41abd1 Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Etar
+format=78dae0298ca87641dd703803670b0dd179ad5f06 Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Glimpse
+format=fdee54db244b58dcbc6ab23188e7a6173e6b631c Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Jelly
+format=602c59e589c984dab78846b1c600f6270770974a Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/LineageParts
+format=86516ef6be260fb58db07617a7cfeea4508e3709 Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Recorder
+format=81b2f0f4e0a4b7fb5153d39b947eb18002d8e8f5 Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Settings
+format=d0976cc4b8a0f8d03c6bdd1632563e13c83caf5f Merge tag 'android-security-14.0.0_r13' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
+format=4ae2322cdc6f5fdd0e94abedfd25734d07aca1a1 Merge tag 'android-security-14.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
+format=5b700295bdabcda60501494bd59815e08af4974f Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Trebuchet
+format=b7614c9eb7e4c0e55a505f9404565868004e09de Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/apps/Updater
+format=3cb130d40a24e337d2bd11f33bf1ff091c48ab53 Updater: Fix broken download ETA/progress
+format=e6edfaab94a0945630f947e53c2eea9456182b37 Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/modules/Bluetooth
+format=53b9f2c0930d957c74a9f89fa1c5a950e89ecae0 Merge tag 'android-security-14.0.0_r13' of https://android.googlesource.com/platform/packages/modules/Bluetooth into HEAD
+format=3054a65b0d85f4f858c9793c15127fc5279411a9 Merge tag 'android-security-14.0.0_r12' of https://android.googlesource.com/platform/packages/modules/Bluetooth into HEAD
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/modules/IntentResolver
+format=c52c8bd50050c81633fb3b1a7801bd3c9e21ad91 Merge tag 'android-security-14.0.0_r13' of https://android.googlesource.com/platform/packages/modules/IntentResolver into HEAD
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/modules/Permission
+format=02b09166c18018578207272a9e7e48b3c53fdb74 permissions: check verity before using
+
+
+====================
+    17-10-2024
+====================
+
+   * packages/modules/Wifi
+format=5f200520648248a978bf1aacb4e59c8ffb5cc50f Merge tag 'android-security-14.0.0_r13' of https://android.googlesource.com/platform/packages/modules/Wifi into HEAD
+
+
+====================
+    17-10-2024
+====================
+
+   * prebuilts/extract-tools
+format=b126753e80fcb5d886a0b4fe91dedb8593176de3 linux-x86: remove qc_image_unpacker
+
+
+====================
+    17-10-2024
+====================
+
+   * prebuilts/tools-lineage
+format=10b65c9a4181390c2258a8c4f947e31f649b6756 Add mkimage for U-Boot script in-tree compilation
+
+
+====================
+    17-10-2024
+====================
+
+   * system/core
+format=8c284ba88abe7c10b1ffbd07a1a63651aab5c397 fs_mgr: Add virtiofs to supported fs list
+
+
+====================
+    17-10-2024
+====================
+
+   * tools/extract-utils
+format=5caad68158c2277677560dae0b304c7a70ddfb4d Add licenses
+format=5f3f34fe26d9adb9412eb4290da0565284762bd0 Switch to SPDX copyright headers
+format=66eb6eff5e0046be7abb50e78288d1f8f6bcc8fe extract_utils: Remove IFS override from colored_echo()
+format=aceac8e191f653b538cec327c968c467088a8928 extract-utils: Join filtered args before adding them to the array
+format=a466f3f3ba4ec2b140f79203d1b192a47282599f templates: Add a sort-blobs-list shortcut
+format=937ec4c34f47d2920a26010deb6f828f04f191cc extract_utils: sort-blobs-list.py: Reintroduce dir first as an opt-in
+format=fd9549eb5aa1e90d638af4a5abe88a63ab7a7d66 extract_utils: sort-blobs-list.py: Improve support for special syntax
+format=b18d9ea416e6ad86e39f7a63d804c307ede72d5a extract_utils: Don't remove the "extension" if it makes the package name empty
+format=91e22ee2301b971cc71d21671d86912a0738c53e extract-utils: Show error on hash mismatch
+format=db62e0837303f402a9b67df856ed3d95d7134121 extract-utils: Fixup pinned files again
+
+
+====================
+    17-10-2024
+====================
+
+   * vendor/crowdin
+format=31dabf8e0e804d483cd032c5cbeeb1198bf20f45 Automatic translation import
+
+
+====================
+    17-10-2024
+====================
+
+   * vendor/gapps
+format=4d2aed7551b2f1a3d7121e0696149f6c58f9841e Regenerate makefiles
+format=be925b67cc09f3ffecdbb145b3b0f35d592366db Move extra product priv-app permissions to privapp-permissions-mtg.xml
+format=cecd93e3a575e645feb9987495c8f43e0ca269c2 Get rid of x86 support
+format=8c0c450114f58a3047dd1c96b51ecdcbe081b429 Add GmsSettingsOverlay
+format=e428e9990c102f50421d954476e5ebd7bb91013c Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES
+format=f66f041781abfb4ce4b57e955f90509ec0d457c6 Fix soname for x86/x86_64 libjni_latinimegoogle.so
+
+
+====================
+    17-10-2024
+====================
+
+   * vendor/lineage
+format=beb96459446503c8f94dc49ed87f24c4e4932f38 build: Make gsi_arm{,64} inherit full_base_telephony.mk
+format=b4128c4846cfc7ef05fc7ffbf65210e1b5531713 vars: remove fbpk_version and wifi_only
+format=5bf3ee5b90881d77e0eae508e684cf651da3c34f apns: Update Brazil carriers to 2024
+format=25dd1aad638a0e3541f8906588791d5d4e22519c bacon: Make it possible to let other build targets depend on lineage OTA package
+
+
+====================
+    17-10-2024
+====================
+
+   * vendor/qcom/opensource/commonsys/wfd
+format=d769796c81927806feb5efdd1a11a8ae0029da0e libwfdaac_vendor: Build with -Werror
+format=c7be245bc91810d7489916a7f164d517eaf91ae7 libwfdaac_vendor: Convert to blueprint
+format=abcc38a16fc7730b4e8acde398d566333b470d52 libwfdaac_vendor: Use log/log.h instead of utils/Log.h
+format=8cf42b74ddade0aec6d59b1d75211a2508061f60 libwfdaac_vendor: Remove unused shared libs
+
+
+====================
+    17-10-2024
+====================
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
+format=cf276cc4d17bc2a57c3600dc739f496aae6a3dea ipacm: Get rid of `using namespace std;`
+
+
