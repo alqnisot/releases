@@ -1,0 +1,916 @@
+====================
+     11-10-2024
+====================
+
+   * frameworks/base
+f959195bd UdfpsAnimation: Address memory leaks and improvements
+f31a3fc85 SystemUI: Fix colored icons going blank
+fa35cac56 Revert "SystemUI: Force update statusbar icon on create"
+e9955e565 NetworkTraffic: Do not request layout on visibility
+7bbce606e NetworkTraffic: Clean up and move settings
+809f44eca New Crowdin updates (#1168)
+d9c2a871c Update Crowdin configuration file
+62c7593ec SystemUI: Do not refresh theme on battery style changes
+35244d823 Fix NPE: due to race condition between KCM package update
+4c8da337d fixup! Firewall: Migrate to POLICY_REJECT_ALL
+c724e6652 Stop domain verification delegated from UIDs blocked by network policy
+364f7b773 KeyguardUpdateMonitor: Add missing getFaceAuthInteractor null check
+b8cf9519b Ignore null action in NativeTombstoneManager.
+aae71d6ed Ignore null action in KeyChainSystemService.
+f429e59b6 SystemUI: Fix dark scrim on light theme on pixel devices
+3fa157d1f Ignore null action in GpuService.
+d7e547464 Ignore null action in AudioService.
+04c4c73a6 Ignore null action in ActivityManagerService.
+f50003e28 Ignore null action in AppBindingService.
+a329125f4 Synchronizing the loudness codec dispatcher
+101fe5b23 Ignore null action in WebViewUpdateService.
+8b9b7ae7c Fix VcnConfig garbage collection
+0ab45359b AlertSlider: Move few configs to SystemUI
+c3c082788 SystemUI: Apply statusbar extra padding to lockscreen
+e17283421 SystemUI: Allow tuning extra padding for statusbar layout [1/2]
+d0d730fb3 SystemUI: Force update statusbar icon on create
+312e3eb46 fixup! Implement firewall status bar indicator
+8a09cc3d5 FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
+b65696a5c Ignore null action in BinaryTransparencyService$PackageUpdatedReceiver
+7c711c4bf Ignore null action in VcnManagementService$VcnBroadcastReceiver
+bebb24066 Ignore null action in AppStateTrackerImpl.
+9ba576e6e Ignore null action in NotificationAttentionHelper.
+0594e3692 Ignore null action in DeviceIdleController.
+37f7463fe Ignore null action in BackgroundJobsController.
+d73e5cd14 Ignore null action in AppWidgetServiceImpl.
+5544ed236 Ignore null action in AlarmManagerService$UninstallReceiver.
+fdb322ef8 Ignore null action in AppRestrictionController.
+8f0e17619 Ignore null action in SliceManagerService.
+762aa16c2 SystemUI: Allow chroma & luminance to affect secondary colors [1/3]
+ebc4106cc Ignore null action in PackageManagerService.
+3dc3a2ba0 Adding nullptr check in Image_getHardwareBuffer() and Image_getFormat().
+068ab4345 Improve the release of predict_back animaton leash
+bef820782 Do not preserve window when window not added
+8f8b0af5f Use MappedFile in android_database_SQLiteConnection
+58dd560d3 Avoid subtracting shmem twice when calculating LOST RAM.
+89b413a99 AndroidManifest: add missing bluetooth intents to protected-broadcast
+527b87f99 Fix process memory data during dump
+1d26c20c9 Fix the wrong light doze state check
+d1bacd403 Skip initializing unused system bar painter
+bcde4baf4 SystemUI: Add ability to hide carrier name on lockscreen [1/2]
+29f2bd9d2 PhoneWindowManager: Add vibration when using physical camera button gesture
+9ae70d370 FaceUnlock: Remove background behind indicator on lockscreen
+6058e2f7b base: Allow to customize bottom corner swipe up action [2/4]
+94c18cada Keep a null check before accessing the BluetoothA2dpWrapper APIs.
+88f7707d5 BrightnessUtils: Conditionally use low gamma implementation for brightness curve
+49c22377c CurrentWeather: Prevent possible memory leak
+eead6933a Optimize AbsListView to reduce click operation latency
+729f037cd ViewConfiguration: Set scroll friction to 0.009
+02e904825 AbsListView: Improve scrolling cache
+85d1c1c67 Speed up Orientation Listener
+c2e6f628d SystemUI: Speed up actions expansion animation
+7b349452f ImageReader: Allow skipping of nativeDetachImage
+a183ad7e0 SystemUI: Add dimens to set max offset of navigation bar burn-in protection
+074c6d3eb SystemUI: Adapt "Extend kill button to notification conversation guts" to A14 QPR2
+1dade32d6 RuntimeInit: Prevent bootloop trying to handle app crash of null service
+9cdaeb006 StringBlock: Prevent SystemUI crash when inflating QS
+5c847fb85 libandroid_defaults: explicitly enable ThinLTO
+b2b90158e Make empty modem activity info as valid
+66d49166c Fix incorrect text shown at PUK lock screen
+2e68a7ba5 SystemUI: Handle the SIM_STATE_NOT_READY state
+e9e406dde sounds: Implement new screenshot sound effect
+48368a3c9 Don't update OverScroller fling state if improper time passed
+d783d7b21 Make all activities resizable
+606fea791 Add some fwb stubs from Oplus
+f15c22918 services: Fix Applock service initialization
+4037b09ae AppLock: Intercept locked apps launching from recents
+8640c7a55 AppLock: Make kotlin libs available only within this module
+1608a4c49 AppLock: Update for kotlin errors
+5200343f1 AppLock: Allow using face unlock for biometric authentication
+2c3bc6cf1 AppLock: Move services to new package
+11dc0eba3 AppLock: Allow locking all apps visible in launcher
+69f2627c3 AppLock: Update API to hide unprotected apps
+fe5fadc7e base: Introduce app lock [1/4]
+04846a6f0 Fix uninstall for all users
+b5fae5a3a AvatarPhotoController: Fix resource leak and recycle bitmap
+d8bf4cde8 ThermalManager: Don't hold mSamples lock while calling power HAL
+c8d38dc73 NSSLC: Prevent possible memory leak
+50fd8f0f4 services: Implement exit app animation boost
+3a07d7a7f services: Implement activity boost optimization
+aae6afcb2 services: Implement transition boosting
+3030200c9 services: Implement scroll gesture boosting
+ec61f6cd4 services: Disallow max cached processes above 128
+07583d542 CUR_MAX_CACHED_PROCESSES is not greater than the maximum value allowed
+eaa9c5b55 DSR: Fix DSR when we have toast window
+433e05e95 DSR: Fix broken DSR
+702c5ab1a ActiveServices: Add delayed service restart (DSR) due to app launch
+e1712fbc7 CachedAppOptimizer: Fix persistent compact skipped
+8f834ecf7 CachedAppOptimizer: Set thread group to background
+28e00a243 CachedAppOptimizer : Pageout File pages during system compaction
+846ecbbee OomAdjuster: B-service aging propagation on memory pressure
+
+   * hardware/lineage/interfaces
+9131e89 Merge 'lineage-22.0' into 15.0
+
+   * lineage-sdk
+4f2eb33 lineage-sdk: Allow to customize bottom corner swipe up action [3/4]
+aabc6fe Add three fingers swipe actions [1/3]
+f94396f Add restart SystemUI in Advanced Reboot [2/2]
+08e6085 Add On-The-Go Mode to power menu constants
+68a34a4 Set long press on back default to kill app
+8042f88 Add more device key actions
+c92f567 NotificationLights: Allow overriding for all apps [1/2]
+e592b99 Battery light: 100% charged level (3/3)
+09f1202 Add toggle to allow advanced restart on secured lockscreen[1/2]
+7a7681c Add settings for brightness slider improvements
+be6def5 Fix settings pref switch for multi-user
+00473c7 Properly set default value for switch pref
+139a2ad Allow value to hide the clock
+637b4e3 Allow value 3 for status bar quick pull down
+249ee2b Remove setting loading for FORCE_SHOW_NAVBAR
+a442e7a Bring our icon
+6b94863 Try loading default setting value for switch
+b830628 Set summary automatically if required
+aa88b11 Replace los versioning
+3c3a3bb Enable advanced reboot by default
+fa380c8 Do not prevent boot on database downgrade
+151b558 Kill trust interface hint on first boot
+6648d11 Disable by livedisplay by default
+734f6c1 Ship as crDroid based on LOS
+
+   * packages/apps/Contacts
+30374e94 Merge 'lineage-22.0' into 15.0
+
+   * packages/apps/Dialer
+49f04db3 Merge 'lineage-22.0' into 15.0
+
+   * packages/apps/DocumentsUI
+76c54463 Merge 'lineage-22.0' into 15.0
+
+   * packages/apps/ExactCalculator
+b10a222 ExactCalculator: Setup for edge to edge support
+f9f0b82 ExactCalculator: Bump SDK version to 35
+33358c3 ExactCalculator: Bump to latest stable AGP, Gradle and dependencies
+
+   * packages/apps/LineageParts
+a589fc2 Disable unused components
+534e9de Remove unused Network Traffic fragment
+5e4b540 Use ListPreference for charging control fragment
+05602c4 Update color mode preview from Android 12
+583b300 Utilities: Fix inaccess Build.DATE
+d02d438 Kill redundant search fun party
+1472f23 Make trust interface less boring
+79ccc27 Add initial crDroid stats support
+debc661 stats: Mod version switched to crdroid version
+658efba Ship as crDroid based on LOS
+
+   * packages/apps/Messaging
+080e016 Merge 'lineage-22.0' into 15.0
+
+   * packages/apps/SetupWizard
+700cac5 Merge 'lineage-22.0' into 15.0
+
+   * packages/apps/ThemePicker
+669f6157 Merge 'lineage-22.0' into 15.0
+
+   * packages/apps/Updater
+9503f19 Merge 'lineage-22.0' into 15.0
+
+   * packages/apps/crDroidSettings
+fefb3fd crdroid: Move Network Traffic settings
+
+   * system/sepolicy
+ec8abec3 Merge 'lineage-22.0' into 15.0
+
+   * tools/extract-utils
+a534bbb extract_utils: simplify partition chunks sorting algorithm
+5a39801 extract_utils: allow generation of apns along carrier settings
+7ad9e20 extract_utils: pass ctx to write_product_copy_files
+1e01d0f extract_utils: add root-relative vendor sub-dir path to ProductPackagesCtx
+38d9d41 extract_utils: add comments to the paths in ProductPackagesCtx
+2c50493 extract_utils: allow any File iterable in makefile functions
+afe947e extract_utils: pass packages context to pre/post mk generation fns
+063cdd8 extract_utils: add args catch-all to pre / post mk generation fns
+032cc59 extract_utils: expose pre / post mk generation fns
+e1325b0 extract_utils: do not pass around own file list
+c0499ac extract_utils: generate soong namespace when imports are missing
+
+====================
+     11-09-2024
+====================
+
+   * android
+f3b50d0 Merge 'lineage-22.0' into 15.0
+
+   * build/make
+e84657e Merge 'lineage-22.0' into 15.0
+
+   * frameworks/native
+049762691 Native: ProducerListener: Import ON_BUFFER_DETACHED Changes
+ba8be86a6 Native: Camera: Import Release Slot Xiaomi Changes
+
+   * frameworks/opt/telephony
+a58eb4abe Merge 'lineage-22.0' into 15.0
+
+   * packages/apps/Launcher3
+b1693f9 Launcher3: Add back spacer between overview buttons
+83302b3 New Crowdin updates (#450)
+
+   * packages/apps/Recorder
+824dc49 Recorder: grant read permissions for apps requesting recordings
+
+   * packages/apps/Settings
+e233221 Settings: Remove navigation bar IME space toggle if taskbar enabled
+045b14a fix crash in setting time zone
+a8f9bc5 Fixup UI for Settings categories (#155)
+87b92fe Settings: Prevent NPE in LoadingViewController
+2a59fbe Settings: Safeguard ringtone pref against faulty gapps
+087e8c9 Settings: Mark HidePrivateSpace as unavailable for now
+dbe9a01 Settings: fix app lock allow biometric toggle ignored (always on)
+af3eafb Settings: AppLock: Update for kotlin errors
+2813ab9 Settings: Don't make app lock settings searchable
+ec66fb6 Settings: Let app lock use face unlock
+75b3d1e Settings: Add app lock settings for alternate security settings provider
+1028c85 Settings: Add app lock summary for 0 protected apps
+3f9e161 AppLock: Slightly bigger icon size
+39d8bef Settings: Update AppLock API
+a31a925 Settings: Allow locking all apps visible in launcher
+8e1f21f Settings: Introduce App Lock [3/4]
+797a9b8 Settings: Fix crash with face lock preference for limited access users
+79aedc6 Settings: Import missing Face Unlock animation
+0fe8aa4 Add Face Unlock with ParanoidSense
+a23d24e Settings: Hide headsup toggle
+6800d2b Settings: Move custom vib pattern to its own preference
+30c2c2d Settings: Follow new ringtone vibration patterns
+a2d4e4a Settings: Preview ringtone vibration pattern
+46aa3cd Settings: Allow choosing a custom vibration pattern [3/3]
+da6dcfe Settings: Add vibration patterns from OOS [3/3]
+8730251 Settings: Add simcard number title for SIM1
+e8a191b Settings: Fix ringtone selection for devices with e-SIM
+f4ce6d9 MSIM Ringtone: Improve on devices with ESIM
+b418dd5 Settings: Use AOSP translations for MSIM ringtone
+ac02a9d Settings: enable SIM card ringtone only if slot not empty [1/2]
+96a213e Settings: Phone ringtone setting for Multi SIM device [2/3]
+3ac83e8 Settings: Add back increasing ring feature (2/2).
+7d2f0e4 Settings: Fix loading iconpack-based Wellbeing icon
+9f0dedd AppVolumeSlice: Allow querying icon of apps installed by any user
+58dc1e3 Settings: support per-app volume [3/3]
+015a9af Settings: Hide force full screen settings
+391743e Settings: Add activity for cutout force full screen
+9151af2 Allow tuning ambient display with sensors [3/3]
+7b025a6 Fix long click intent for Smart Pixels tile [2/2]
+cd1d417 development: Enable freeform windows by default
+609d44a Allow adding space below IME on disabling navigation hint [2/3]
+92ae8d9 Hide navbar radius customization when taskbar enabled
+08531ff Show appropriate title for gesture navigation settings
+35af418 Disable Navbar radius customization if hint disabled
+f7899dc Settings: Allow Configuring Navbar Radius [2/2]
+3da3a7b Optional haptic feedback on back gesture [2/2]
+6b54e20 Allow to hide arrow for back gesture [2/2]
+725c625 Settings: Also hide pill length on taskbar mode
+f40b043 Settings: Change back gesture height intervals
+aeaf5c1 Allow changing back gesture height [2/2]
+3f0cd76 Allow changing the length of gesture navbar [2/2]
+3ce2f62 Settings: Add icon for WEP in wifi network settings
+15816b2 Settings: Allow using icon for ComposePreference
+1abf0b0 Open app when clicking on icon in App Info
+d11348a BatteryStateDatabase: Set exportSchema to false
+2c3aeee WiFi: Remove country code checking.
+6672fdb DataProcessor: Do not skip and replace screen on component with screen on time
+6c07843 Settings: Fix regulatory info availability check
+a828058 Settings: Add location indicator to privacy controls fragment
+88b26e3 Settings: Move location indicators toggle to privacy control settings
+1c85415 ChooseLockPassword: Decrease minimum pin length for auto confirm
+52e0409 Settings: Make all user apps cloneable
+f5afc8e Refactor AppPicker page to adopt Settings main theme
+635ad8a Settings: Avoid enforcing weird backgrounds
+17dad65 Settings: Don't show module version if isn't a date
+8757ef0 FaceEnroll: Fix circle camera view background color
+7d30a87 Settings: Improve code for time spent in app
+7db07bf Settings: Add permission to hold wake lock
+7eefe29 Settings: Disable automatic system server heap dumps by default
+e0de045 Remove feedback and bug report stuff
+338fe17 InstalledAppDetails: fix refreshing storage summary after force stop
+1edb090 AppInfo: Add time spent in app from Wellbeing
+26c1261 Settings: add sim status listener in about phone
+c62fe8e Settings: OverlayCategoryPreferenceController: Sort overlays by name
+0bb5158 Expand abbreviation in average memory usage string
+9dd01eb Settings: Add a preference to battery optimization page
+f8e2b63 Settings: Move battery/notification light settings to crdroid
+b160ac6 Settings: Fix NPE with customdialogpref for backlight settings
+ad59192 Setting: batteryinfo: Add config to enable/disable battery design & maximum capacity info
+562944a Fix memory leak on sensormanager
+469c5e2 Settings: Skip auth for WiFi net share when unlocked in the last 60s
+83bde02 Settings: Move Vo5G toggle right below VoLTE
+a1d27f5 fuelgauge: Hide screen time since last full charge if not valid
+c45cf19 Port "Battery Usage Alerts" feature from factory images
+dbf4b62 Settings: Link smallest width options in display settings
+8f2c699 Settings: Follow system theme for SD card activities
+3ef8dfb Fix SmartForwardingActivity crash at screen rotation
+4e0c655 Fix network can't handle simultaneously SS request for both subs
+78127a7 Settings: fix unexpected routing selection
+8357536 Update the icon for the adb wireless pairing code preference.
+241037a Settings: Add missing icon for media output
+09f3279 Settings: Remove typo in manifest to fix predictive back
+e93adb5 Settings: Fix invalid private DNS help text if URI is missing
+0d4702c Drawables: Dark mode support for app installation restriction icon
+8287a06 Settings: Add icon for emergency broadcasts
+0571794 Settings: Move blur toggle to Display options.
+b4f1fb8 Settings: move Extra Dim feature to display
+6a2a19b Settings: Fix up panel theme and layout
+b57648d Settings: Add icon for 'WiFi cellular data fallback'
+35f884c Settings: Add icon for 'WiFi direct'
+
+   * packages/apps/crDroidSettings
+ec4875f New Crowdin updates (#1190)
+
+   * packages/modules/Bluetooth
+659e7a1ea Merge 'lineage-22.0' into 15.0
+
+   * packages/modules/Wifi
+f7aadb6fb Merge 'lineage-22.0' into 15.0
+
+   * system/core
+d25aaf4b Avoid unnecessary allocation in VectorImpl
+b6836794 core: Lockscreen Charging (2/3)
+87e94141 camera: Add L-compatible camera feature enums
+7eb535d1 Camera: Add feature extensions
+e597c251 init: reboot to recovery on panic by default to allow reading pstore
+618304cc init: Do not set safety net props for ENG builds
+a457cc02 init: Spoof more props
+556a65c6 init: Add more properties to spoof.
+1df0aa09 init: Weaken property override security for the init extension
+f84530c6 init: Set properties to make SafetyNet pass
+2fe6a15d init.rc: don't start console unless asked to
+ba1b81de init.rc: Disable native stats collection service
+34714ab3 debuggerd: Adapt rom name in tombstones
+56b1c48c Revert "init.rc: remove 4.9/4.14 support"
+998e5a9c debuggerd: Set correct version for tombstone
+
+   * vendor/lineage
+5021add overlay: update configs for AiAi
+48f56f1 crdroid: Tag it as BETA
+6a3db2e crdroid: Execute changelog script once at a time
+3ab764d crdroid: Add changelog script
+863fbb5 crdroid: Generate OTA json at build time
+6b5d67b crdroid: Move face unlock biometric permission to system_ext
+3490469 overlay: Use google-sans for font config overlays
+ea6530c overlay: Update device configs global overrides
+0395006 crdroid: Adding an option to build DeviceAsWebcam
+19e5bd7 aconfig: Enable polite notifications
+271fb17 crdroid: Switch to AOSPA's face unlock implementation
+eb5fe9f config: Optimize Launcher3 and Settings for speed
+ae911ea overlay: Add gms location history to extra location packages
+906c17a overlay: Add tethering to location exemption
+be46920 overlay: Add SystemUI to location extra packages
+003eee1 overlay: Add OmniJaws to location extra packages
+24da639 overlay: Offload WM shell to another thread
+a3492d8 overlay: Update SettingsProvider defaults
+b778a91 crdroid: Build GameSpace
+96f1647 crdroid: Build OmniJaws service
+a0d3fcf soong: Add CAMERA_NEEDS_CLIENT_INFO_LIB{_OPLUS}
+785a55f soong: Add support to set vendor tag with client package name
+b9f6e3c crdroid: Build OmniStyle
+93e9c4c crdroid: Build BatteryStatsViewer
+03823d4 crdroid: Update clone exemption list
+e9b718d crdroid: Add preinstalled package list to stop auto cloning
+2858678 overlay: Enable app-cloning feature in Settings
+55c4f4f overlay: Settings: Show memory usage in app info
+9a0963e device_config: Enable Cloned App
+9aac64c overlay: Update clock plugin list
+c5a10b0 overlay: Allow new SystemUI clocks
+1c9c4c1 overlay: Set AOSP webview as fallback
+2be76a2 crdroid: Enable ThinLTO cache
+7394e0a build: Override host metadata
+3cfc06f crdroid: Remove packages moved to addons
+859b1bc crdroid: Moved bootanimation to addons
+b025f63 crdroid: Clean up wallpaper overlay
+f26434d crdroid: Remove Trebuchet packages
+cf84d1f crdroid: Always disable app launch blur
+d1d9b8c common: Allow OTA downgrade regardless build type
+b582c2a roomservice: get me some crDroid
+550daad charger: Switch from LineageOS Teal to crDroid Blue
+81ea930 apns: Update mobily APN for prepaid connection
+967d27b Revert "overlay: Default to Seedvault backup transport"
+443f09d crdroid: Drop custom adb drawable
+4646606 build: Ship as crDroid based on LOS
+
+====================
+     11-08-2024
+====================
+
+   * android
+2af1fc8 manifest: November 2024 Security Update
+
+   * build/make
+cbbde02 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5
+
+   * build/release
+0d37102 AP3A: Set SPL to 2024-11-05
+
+   * frameworks/native
+1a656213b Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5
+
+   * frameworks/opt/telephony
+6f74d80eb Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5
+
+   * hardware/google/graphics/common
+dbdd700 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5
+
+   * hardware/qcom-caf/sm8450/audio/primary-hal
+7535d6a hal: Guard primary audio HAL in case target provides prebuilt
+
+   * lineage-sdk
+5a577dc sdk: Make it REUSE compatible
+87d2085 sdk: Remove unused .gitignore
+5efaee2 sdk: Remove SettingsProvider tests
+756427f sdk: Remove unused proguard.txt
+
+   * lineage/scripts
+cf89200 pixel: Adapt to new build prop override scheme
+
+   * packages/modules/Bluetooth
+077e740c0 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5
+
+   * packages/modules/Wifi
+1e0094e82 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5
+
+   * packages/providers/MediaProvider
+3bb894798 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5
+
+   * prebuilts/clang/host/linux-x86/clang-latest
+6f76406 clang 19.0.1 (based on r536225) from build 12602325
+
+   * system/core
+3f2d09e4 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5
+
+   * tools/extract-utils
+c16941b fixup! extract_utils: ignore regeneration when regenerate makefiles is set
+1ba5168 extract_utils: Use vendorcompat only for blobs on odm and vendor
+
+   * vendor/lineage
+2e33440 release: Sync Pixel 9 SVN/kernel manually for Nov ASB
+eb80459 release: Sync Pixel 6-8a SVN manually for Nov ASB
+2816697 vars: November 2024 Security update
+
+====================
+     11-07-2024
+====================
+
+   * art
+5ddf3284 optimized hprof speed
+bfeeb00d Speed up `Class::IsInSamePackage()` even more.
+17830678 Speed up `Class::IsInSamePackage()`.
+13a7ae9c Use `std::string_view` for `ClassTable` operations.
+
+   * lineage/scripts
+5ac8f5a pixel: Changes for python extract-utils
+
+   * tools/extract-utils
+3a62f8b extract_utils: Fixup unversioned protobuf dependencies
+8732375 extract_utils: find deps separately for 32-bit and 64-bit
+a96e5b7 extract_utils: ignore regeneration when regenerate makefiles is set
+2e05b3c extract_utils: silently ignore regeneration when section is set
+4721d59 extract_utils: extend `lib_fixups` in the template
+c0902d9 extract_utils: enable ELF checks by default
+2616b80 extract_utils: add support for factory proprietary file
+79a9d9d extract_utils: add extract function for copying pixel fimware
+772136a extract_utils: add extract function for extracting pixel factory images
+
+====================
+     11-06-2024
+====================
+
+   * android
+cb7a377 Merge 'lineage-22.0' into 15.0
+5a9d759 manifest: Track our device/google/contexthub
+
+   * device/google/contexthub
+8e258d9 Revert "Removed unused Android.mk under device/google/contexthub"
+
+   * packages/apps/Recorder
+09b8722 Recorder: Use File instead of Path
+229da7c Recorder: Always track amplitude
+32a6b1c Recorder: Redo high quality recorder
+2a69a8b Recorder: Don't make trackAmplitude/isRecording atomic
+cbeb8fc Recorder: Release the AudioRecord properly
+7bba682 Recorder: Use default audio source in GoodQualityRecorder
+
+   * tools/extract-utils
+0e85d2b extract_utils: fix built-in shadowing
+09aa24e extract_utils: keep ruff rules in ruff.toml
+dde2495 extract_utils: implement SKIPAPKCHECKS
+5b092cb extract_utils: roll our own ELF parser
+a7b5b16 extract_utils: use absolute path for debugfs executable if possible
+118062b extract_utils: enable unused-import (F401) ruff check
+a7ad59e extract_utils: enable undefined-name (F821) ruff check
+b0974f4 extract_utils: enable f-string-missing-placeholders (F541) ruff check
+64c6bba fixup! extract_utils: Make carriersettings package opt-outable
+
+   * vendor/qcom/opensource/commonsys/fm
+41adf54 FM: Add backward compatiblity support for oreo FM configs
+
+====================
+     11-05-2024
+====================
+
+   * device/qcom/sepolicy-legacy-um
+a3126b0 common: Switch to AIDL USB HALs
+
+   * hardware/lineage/compat
+7ac87c6 libhidlbase-v32: Mark as recovery_available
+
+   * lineage-sdk
+303a108 Remove 'build-time disabling of components' resources
+
+   * packages/apps/Dialer
+0ae98b6e New translations (#131)
+
+   * packages/apps/GameSpace
+0f17631 New translations (#95)
+
+   * packages/apps/Launcher3
+a440818 New Crowdin updates (#448)
+
+   * packages/apps/crDroidSettings
+908d395 New Crowdin updates (#1188)
+
+   * packages/inputmethods/LatinIME
+c85f34f fixup! 15: subtract width of screen cutouts when calculating keyboard width
+22ffb2c 15: subtract width of screen cutouts when calculating keyboard width
+dbd3be9 LatinIME: Fix Implicit PendingIntent Vulnerability
+526fba3 LatinIME: Bump sdk version
+0132d2e LatinIME: Default to Material You theme
+71b117c LatinIME: Add libjni_latinimegoogle for swype
+d9a249e LatinIME: Fix NPE in KeyboardTheme
+
+   * packages/modules/Connectivity
+00c8ef743 BpfHandler: Add kver checks around V BPF attach program checks
+3b4ae1974 netd: Require 4.19+ for connect/recvmsg/sendmsg cgroup hooks
+
+   * vendor/lineage
+413a493 config: Add text classifier files to allowed product artifacts
+f3cb134 Migrate to component-override for force enabled/disabled components
+e96bc80 config: Build the textclassifier models
+
+====================
+     11-04-2024
+====================
+
+   * hardware/google/gchips
+39efe73 Convert libVendorVideoApi to soong
+
+   * lineage/scripts
+6ca3c81 reuse_helper: Handle proguard.flags, aidl and fix bp
+
+   * tools/extract-utils
+cd1d802 extract_utils: Make carriersettings package opt-outable
+d6322a1 extract_utils: add type to default lib_fixups
+0c0462b extract_utils: create empty dirs for not found partitions
+8fffa19 extract_utils: refactor extract functions handling
+93ee352 extract_utils: split up alternate paths handling
+0722dbc extract_utils: add and use proprietary file type
+91caba4 extract_utils: raise clearer error when file does not exist
+
+====================
+     11-03-2024
+====================
+
+   * android
+bb6ce4a Merge 'lineage-22.0' into 15.0
+d8074fa manifest: Track our kotlinc/kotlinx.{coroutines,serialization} forks
+4567cf9 Revert "manifest: Remove vendor/crowdin"
+
+   * build/make
+6e20e6d Merge 'lineage-22.0' into 15.0
+
+   * build/soong
+9d74a5a Merge 'lineage-22.0' into 15.0
+681549f Add vendor/lineage to kotlin plugins neverallow
+4102975 Add support for kotlin plugins
+ad07844 Add documentation for select statements
+cc855c8 Merge 'lineage-22.0' into 15.0
+
+   * external/kotlinc
+c3434db Add a target for kotlin-serialize-compiler
+
+   * external/kotlinx.serialization
+8f4c5d9 Export r8 rules to users
+
+   * frameworks/av
+1a3673c0 Fix MediaPlayer raw pointer usage
+220e269a Fix render thread early termination
+
+   * frameworks/opt/telephony
+f0ed26038 Ignore null action in ImsResolver.
+
+   * lineage-sdk
+8c849ce sdk: Remove tests
+cd36464 sdk: Remove CleanSpec.mk
+82a2cae sdk: Remove most public sdk parts
+
+   * packages/apps/Aperture
+950a507 Aperture: Update CameraX to 1.5.0-alpha03
+a87bc50 Aperture: Use AOSP material & lifecycle-common
+084bbbf Aperture: Update to SDK 35
+b674847 Aperture: Update AGP to 8.7.2
+390f486 Automatic translation import
+
+   * packages/apps/ExactCalculator
+760b63b ExactCalculator: Switch to dedicated layout for license activity
+0a67a77 ExactCalculator: Add missing newlines to all files
+5d95627 ExactCalculator: Set default_applicable_licenses
+8f2d4e7 ExactCalculator: Make it REUSE compatible
+1c907f8 ExactCalculator: Remove CleanSpec.mk
+9602469 ExactCalculator: Use background color for history frame
+
+   * packages/apps/FMRadio
+be7524a FMRadio: Remove unused string
+ee47f7a Automatic translation import
+
+   * packages/apps/Glimpse
+42ab488 Glimpse: Use AOSP material
+cbb3002 Glimpse: Update to SDK 35
+4254672 Glimpse: Update AGP to 8.7.2
+
+   * packages/apps/Jelly
+215e423 Jelly: Don't change immersive mode on focus change
+4644d2b Jelly: Refactor immersive mode
+db352a5 Jelly: Use AOSP appcompat and material
+c64b4dc Jelly: Update to SDK 35
+ef8f4e6 Jelly: Update AGP to 8.7.2
+
+   * packages/apps/Recorder
+1ab7444 Recorder: Use AOSP material
+6cf972f Recorder: Update to SDK 35
+0fe0b82 Recorder: Update AGP to 8.7.2
+73272e7 Automatic translation import
+
+   * packages/modules/Wifi
+78b76b97a Ignore null action in WifiServiceImpl.
+
+   * vendor/crowdin
+6675f30 Automatic translation import
+
+   * vendor/lineage
+0cb50ea Add `androidx.compose.compiler_compiler-hosted-plugin` define
+
+   * vendor/qcom/opensource/commonsys/fm
+9300bb1 Automatic translation import
+
+====================
+     11-02-2024
+====================
+
+   * android
+f1625cf manifest: Track for Backgrounds
+
+   * device/samsung/m52xq
+5b62e92 update crdroid.dependencies
+
+   * hardware/lineage/compat
+21dc833 libhidlbase-v32: Allow on system_ext
+
+   * lineage-sdk
+88916ba Remove values-lu
+
+   * packages/apps/Aperture
+e926ecd Aperture: Don't use resource from other package
+b0e033b Aperture: Optimize and shrink resources
+
+   * packages/apps/Backgrounds
+d51b674 Backgrounds: Import wallpapers for crdroid
+
+   * packages/apps/Dialer
+4027c650 New translations (#129)
+
+   * packages/apps/Eleven
+3a01ff6 Remove values-lu
+
+   * packages/apps/Etar
+cfc7f1d Remove values-lu
+
+   * packages/apps/FMRadio
+3a33db4 FMRadio: Convert to Android.bp
+
+   * packages/apps/GameSpace
+080e7ad New Crowdin updates (#93)
+
+   * packages/apps/Glimpse
+bb57927 Glimpse: Optimize and shrink resources
+
+   * packages/apps/Jelly
+b5e4cbb Jelly: Optimize and shrink resources
+
+   * packages/apps/Launcher3
+15d35c5 New Crowdin updates (#447)
+
+   * packages/apps/Recorder
+5422d48 Recorder: Optimize and shrink resources
+
+   * packages/apps/SetupWizard
+6a8260b Remove values-lu
+
+   * packages/apps/WallpaperPicker2
+d1429bb4 WallpaperPicker2: Remove the use of smaller images for thumbnails
+
+   * packages/apps/crDroidSettings
+9d14caf crdroid: Update setting limits for pulse solid renderer
+533693d New Crowdin updates (#1186)
+3326a02 crdroid: Allow tuning extra padding for statusbar layout [2/2]
+
+   * packages/resources/devicesettings
+da6e556 Remove values-lu
+
+   * vendor/crowdin
+d19d673 Remove no longer used translations
+
+   * vendor/lineage
+d6777fa config: Changes for libfmjni bp conversion
+369fe67 common: Build AvatarPicker
+
+====================
+     11-01-2024
+====================
+
+   * android
+a774bd5 manifest: Untrack fm-commonsys
+10279a3 Revert "manifest: Track vendor/qcom/opensource/usb"
+19ab032 Merge 'lineage-22.0' into 15.0
+dc122a3 manifest: Track qcom bluetooth commonsys-intf
+
+   * bionic
+bec50f20 Ensure prop has zero padding
+9c77740b Prevent serial of ro props from self increment
+3365688e getaddrinfo: Use Cloudflare DNS instead of Google DNS
+15c45d06 libm: Support -ffp-contract=fast
+db82fc74 Re-enable LTO for libm
+eecd9261 linker: Disable linker debugging
+489d7fd5 libc: Set __bionic_asm_align to 64 for arm and arm64
+46cbcc21 bionic: Support wildcards in cached hosts file
+ce780ace bionic: Sort and cache hosts file data for fast lookup
+
+   * build/make
+6813131 Merge 'lineage-22.0' into 15.0
+
+   * device/lineage/sepolicy
+a29a21f Allow apps to access usap pool
+185c198 lineage: Make Health service discoverable by Settings app
+f38f4bc sepolicy: Label Dolby Sepolicy labels
+ea70d78 Allow system app to read navbar config
+60d947b sepolicy: Label more dirty writeback parameters
+0fc9e2e sepolicy: introduce app lock [2/4]
+64e76ac sepolicy: Label LinearmotorVibratorService
+ec06d86 sepolicy: Move in pocket service sepolicy
+aa6c854 sepolicy: Label skip unconfigure prop
+defbc8f Allow updater to read data files
+38041d5 updater_app: Address uncrypt denials
+12ba50f sepolicy: Allow system_server to read and write to sysfs_battery_supply
+31888e9 selinux: Update app name for updater
+81fb391 Update ota_update path
+288bb18 sepolicy: Allow launcher app to read archiving prop
+054a61d Allow platform app to read memory info
+e333718 sepolicy: Allow platform adjust camera shutter sound
+6512134 Allow documents UI to access storage
+0edb2ad sepolicy: Allow key disabler access for platform
+
+   * device/samsung/sm7325-common
+c104d66 update crdroid.dependencies
+
+   * frameworks/opt/telephony
+b5e890aa6 RIL: Fix manual network selection with old modem
+
+   * lineage-sdk
+9ea8d63 Automatic translation import
+
+   * packages/apps/Aperture
+4979595 Automatic translation import
+
+   * packages/apps/AudioFX
+2b4fad3 Remove values-lu
+
+   * packages/apps/Backgrounds
+2920955 Automatic translation import
+
+   * packages/apps/Contacts
+de2d59bc Automatic translation import
+
+   * packages/apps/DeskClock
+423acc6 Automatic translation import
+
+   * packages/apps/Dialer
+97631825 Automatic translation import
+60e35ca5 New Crowdin updates (#127)
+
+   * packages/apps/DocumentsUI
+bd011efd Automatic translation import
+
+   * packages/apps/Eleven
+cc6425f Automatic translation import
+
+   * packages/apps/Etar
+3e49484 Automatic translation import
+
+   * packages/apps/FMRadio
+bf2c007 Remove values-lu
+
+   * packages/apps/Gallery2
+9c5801d Remove values-lu
+
+   * packages/apps/GameSpace
+d2b6686 New Crowdin updates (#92)
+
+   * packages/apps/Glimpse
+6812579 Automatic translation import
+
+   * packages/apps/Jelly
+d365e31 Automatic translation import
+
+   * packages/apps/Launcher3
+b47ccae New Crowdin updates (#444)
+
+   * packages/apps/LineageParts
+80fb24c Automatic translation import
+b107a10 LineageParts: Get rid of custom list layout
+6406556 LineageParts: Setup window insets for SettingsPreferenceFragment
+
+   * packages/apps/Messaging
+2663c4e Automatic translation import
+
+   * packages/apps/Profiles
+7edbf3a Remove values-lu
+
+   * packages/apps/Recorder
+47146ee Automatic translation import
+
+   * packages/apps/SetupWizard
+875c71c Automatic translation import
+
+   * packages/apps/ThemePicker
+eae14033 Automatic translation import
+
+   * packages/apps/Updater
+a72dadf Automatic translation import
+
+   * packages/apps/crDroidSettings
+538f1a9 New Crowdin updates (#1185)
+
+   * packages/inputmethods/LatinIME
+23c3241 Automatic translation import
+
+   * packages/providers/DownloadProvider
+3b899e2 Automatic translation import
+
+   * packages/resources/devicesettings
+1073036 Automatic translation import
+
+   * packages/services/Mms
+9ef3eac Automatic translation import
+
+   * vendor/addons
+e4cca47 addons: Disable UDFPS icons for now
+
+   * vendor/crowdin
+c15f155 Automatic translation import
+
+   * vendor/lineage
+abe2745 overlay: Do not set rounded_corner_content_padding
+e4c8afb aconfig: Enable revamped settings
+
+   * vendor/qcom/opensource/commonsys-intf/bluetooth
+6a51aea Add .gitupstream file
+
+   * vendor/qcom/opensource/commonsys/fm
+0b9ae4a FM: Slight design adjustments
+9a92739 FM: don't destroy notification channel on stop
+43c56a0 FM: Bring in the new icon
+901b51b FM: Revamp notifications
+4c4f025 FM: Fix KHz->kHz
+67bd3b8 FM: Convert regional band arrays to string references
+a6b439d FM: Update India bands
+283246f FM: Fix headphone icon
+bb878f6 FM: Fix settings UI bugs
+3a55a05 FM: Localization of band types
+1c3e4a1 FM: improved band selection
+a4bb8f1 FM: Select band based on country
+cb8cdde FM: Keep track of scanned frequencies in service
+d54b56a FM: Ensure scan state is kept in sync
+a5974d0 FM: The collect channel disappear when quit FM
+8826e8e FM: Fix status text to reflect when FM is enabled.
+ad938f8 FM: Launch station list automatically after scan
+098b300 FM: reenable radio text visibility after station info updated
+1544f5f FM: Store tag num/value in sequence
+81d4c8f FM: retune last frequency when resume after call
+fc44c32 FM: materialize
+7ac1431 FM: add Indonesia
+68ee5b9 FM: Cleanup resources
+6a126c5 FM: Add property to force use internal antenna
+cc5b09b FM: Switch file extension to aac
+5727338 FM: Call unregister in onPause
+88ef185 FM: Scanned frequencies are saved in ascending ordering
+73d6a49 FM: Re-add RDS fields to UI
+c3a9e32 FM: Make default country an overlay
+9bdb18b FM: Restore seek arrows
+bc5da54 FM: Re-vamp UI
+a3f70bb FM: fm_hci/helium: Exclude from OSS builds
+9e9a60f jni: Remove btconfigstore remnants and make it build
+6b3b02b jni: Resolve -Wwritable-strings warnings in helium FW library variables
+8270e9d FM: Set `provides_uses_lib` for qcom.fmradio module
+285aea9 FM: Break bootclasspath dependency
+6c2f8ce Allow library to be used by apps directly
+
